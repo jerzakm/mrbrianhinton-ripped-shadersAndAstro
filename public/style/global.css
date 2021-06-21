@@ -1,28 +1,144 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
+@font-face {
+  font-family: 'FuturaPTWebLight';
+  src: url('../public/fonts/Futura-PT_Light.woff2') format('woff2'),
+    url('../public/fonts/Futura-PT_Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPTWebBook';
+  src: url('../public/fonts/Futura-PT_Book.woff2') format('woff2'),
+    url('../public/fonts/Futura-PT_Book.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPTWebMedium';
+  src: url('../public/fonts/Futura-PT_Medium.woff2') format('woff2'),
+    url('../public/fonts/Futura-PT_Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPTWebBold';
+  src: url('../public/fonts/Futura-PT_Bold.woff2') format('woff2'),
+    url('../public/fonts/Futura-PT_Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPTWebCondExtraBold';
+  src: url('../public/fonts/Futura-PT_Cond-ExtraBold.woff2') format('woff2'),
+    url('../public/fonts/Futura-PT_Cond-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPTWebCondMedium';
+  src: url('../public/fonts/Futura-PT_Cond-Medium.woff2') format('woff2'),
+    url('../public/fonts/Futura-PT_Cond-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-size: 1rem;
-  --user-font-scale: 1rem - 16px;
-  font-size: clamp(0.875rem, 0.4626rem + 1.0309vw + var(--user-font-scale), 1.125rem);
+  /* Colors */
+  --hue: 250;
+  --dark-color: hsl(var(--hue), 100%, 9%);
+  --dark-color-bg: hsla(var(--hue), 100%, 9%, 0.6);
+  --light-color: hsl(var(--hue), 95%, 98%);
+  --light-color-bg: hsla(var(--hue), 95%, 98%, 0.6);
+  --base: hsl(var(--hue), 95%, 50%);
+  --complimentary1: hsl(var(--hue-complimentary1), 95%, 50%);
+  --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
+
+  --bg-gradient: linear-gradient(
+    to bottom,
+    hsl(var(--hue), 95%, 99%),
+    hsl(var(--hue), 95%, 84%)
+  );
+
+  /* Spacing */
+  --space-eighth: 0.2rem;
+  --space-quarter: 0.4rem;
+  --space-half: 0.8rem;
+  --space-default: 1.6rem;
+  --space-double: 3.2rem;
+  --space-triple: 4.8rem;
+  --space-quad: 6.4rem;
+  --space-oct: 12.8rem;
+
+  /*Typography*/
+  --font-family-sans: 'FuturaPTWebBook', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-sans-light: 'FuturaPTWebLight';
+  --font-family-sans-md: 'FuturaPTWebMedium';
+  --font-family-sans-bold: 'FuturaPTWebBold';
+  --font-family-sans-cond: 'FuturaPTWebCondMedium';
+  --font-family-sans-condextrabold: 'FuturaPTWebCondExtraBold';
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  padding: 4rem 2rem;
-  width: 100%;
-  min-height: 100vh;
+  height: 100%;
   display: grid;
-  justify-content: center;
-  background: #f9fafb;
-  color: #111827;
+  place-items: center;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-family: var(--font-family-sans);
+  color: var(--dark-color);
+  background: var(--bg-gradient);
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #111827;
-    color: #fff;
-  }
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-family: var(--font-family-sans-md);
+  border-bottom: 0.1rem solid var(--base);
+}
+
+a:hover {
+  border-bottom: 0.1rem solid var(--dark-color);
+}
+
+.msglink,
+.msglinkfirst {
+  color: white;
+}
+
+.msglinkfirst {
+  margin-right: 2.4rem;
+  margin-bottom: var(--space-default);
+}
+
+.msglink:hover,
+.msglinkfirst:hover {
+  color: white;
+  border-bottom: 0.1rem solid white;
+}
+
+.orb-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
 }

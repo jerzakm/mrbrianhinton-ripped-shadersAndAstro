@@ -1,5 +1,6 @@
 ---
-import Tour from '../components/Tour.astro';
+import About from '../components/About.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <!doctype html>
@@ -7,32 +8,41 @@ import Tour from '../components/Tour.astro';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Astro</title>
+    <title>Brian Hinton personal site</title>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
     <link rel="stylesheet" href="/style/global.css">
-    <link rel="stylesheet" href="/style/home.css">
 
     <style>
-        header {
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            max-width: min(100%, 68ch);
-        }
+     main{
+        color: var(--dark-color);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2rem;
+     }
+     section {
+        width: 100%;
+        max-width: 63.4rem;
+        padding-top: var(--space-oct);
+        padding-left: var(--space-double);
+        padding-right: var(--space-double);
+        margin-bottom: var(--space-quad);
+        background-color: var(--light-color-bg);
+        backdrop-filter: blur(24px);
+     }
     </style>
+
 </head>
 <body>
     <main>
-        <header>
-            <div>
-                <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-                <h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-            </div>
-        </header>
-
-        <Tour />
+    <section>
+        <About />
+        </section>
+        <section><Contact/></section>
     </main>
 </body>
 </html>
