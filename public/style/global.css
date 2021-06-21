@@ -1,54 +1,54 @@
 @font-face {
   font-family: 'FuturaPTWebLight';
-  src: url('../public/fonts/Futura-PT_Light.woff2') format('woff2'),
-    url('../public/fonts/Futura-PT_Light.woff') format('woff');
+  src: url('/fonts/Futura-PT_Light.woff2') format('woff2'),
+    url('/fonts/Futura-PT_Light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FuturaPTWebBook';
-  src: url('../public/fonts/Futura-PT_Book.woff2') format('woff2'),
-    url('../public/fonts/Futura-PT_Book.woff2') format('woff');
+  src: url('/fonts/Futura-PT_Book.woff2') format('woff2'),
+    url('/fonts/Futura-PT_Book.woff2') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FuturaPTWebMedium';
-  src: url('../public/fonts/Futura-PT_Medium.woff2') format('woff2'),
-    url('../public/fonts/Futura-PT_Medium.woff') format('woff');
+  src: url('/fonts/Futura-PT_Medium.woff2') format('woff2'),
+    url('/fonts/Futura-PT_Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FuturaPTWebBold';
-  src: url('../public/fonts/Futura-PT_Bold.woff2') format('woff2'),
-    url('../public/fonts/Futura-PT_Bold.woff') format('woff');
+  src: url('/fonts/Futura-PT_Bold.woff2') format('woff2'),
+    url('/fonts/Futura-PT_Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FuturaPTWebCondExtraBold';
-  src: url('../public/fonts/Futura-PT_Cond-ExtraBold.woff2') format('woff2'),
-    url('../public/fonts/Futura-PT_Cond-ExtraBold.woff') format('woff');
+  src: url('/fonts/Futura-PT_Cond-ExtraBold.woff2') format('woff2'),
+    url('/fonts/Futura-PT_Cond-ExtraBold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FuturaPTWebCondMedium';
-  src: url('../public/fonts/Futura-PT_Cond-Medium.woff2') format('woff2'),
-    url('../public/fonts/Futura-PT_Cond-Medium.woff') format('woff');
+  src: url('/fonts/Futura-PT_Cond-Medium.woff2') format('woff2'),
+    url('/fonts/Futura-PT_Cond-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
   /* Colors */
-  --hue: 250;
+  --hue: 270;
   --dark-color: hsl(var(--hue), 100%, 9%);
   --dark-color-bg: hsla(var(--hue), 100%, 9%, 0.6);
   --light-color: hsl(var(--hue), 95%, 98%);

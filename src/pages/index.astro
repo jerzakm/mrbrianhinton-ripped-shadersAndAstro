@@ -6,15 +6,15 @@ import Contact from '../components/Contact.astro';
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Brian Hinton personal site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brian Hinton personal site</title>
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-    <link rel="stylesheet" href="/style/global.css">
+  <link rel="stylesheet" href="/style/global.css">
 
-    <style>
+  <style>
      main{
         color: var(--dark-color);
         width: 100%;
@@ -22,6 +22,7 @@ import Contact from '../components/Contact.astro';
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         font-size: 2rem;
      }
      section {
@@ -34,15 +35,27 @@ import Contact from '../components/Contact.astro';
         background-color: var(--light-color-bg);
         backdrop-filter: blur(24px);
      }
-    </style>
-
+    .footer {
+      background-color: var(--dark-color-bg);
+      color: white;
+      width: 100%;
+      max-width: 63.4rem;
+      padding-top: var(--space-triple);
+      padding-left: var(--space-double);
+      padding-right: var(--space-double);
+      padding-bottom: 8.8rem;
+    }
+  </style>
 </head>
+
 <body>
-    <main>
-    <section>
-        <About />
-        </section>
-        <section><Contact/></section>
-    </main>
+  <main>
+  <section>
+    <About />
+  </section>
+  <section class="footer">
+    <Contact/>
+  </section>
+  </main>
 </body>
 </html>
