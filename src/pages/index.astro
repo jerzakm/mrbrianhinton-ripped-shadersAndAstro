@@ -1,6 +1,7 @@
 ---
 import About from '../components/About.astro';
 import Contact from '../components/Contact.astro';
+import ShaderBackground from '../components/ShaderBackground.astro';
 ---
 
 <!doctype html>
@@ -8,6 +9,7 @@ import Contact from '../components/Contact.astro';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brian Hinton's personal site, ripped by github.com/jerzakm">
   <title>Brian Hinton personal site</title>
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -49,13 +51,14 @@ import Contact from '../components/Contact.astro';
 </head>
 
 <body>
+  <ShaderBackground/>
   <main>
-  <section>
-    <About />
-  </section>
-  <section class="footer">
-    <Contact/>
-  </section>
+    <section>
+      <About />
+    </section>
+    <section class="footer">
+      <Contact/>
+    </section>
   </main>
 </body>
 </html>
