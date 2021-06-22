@@ -1,29 +1,18 @@
-# Welcome to [Astro](https://astro.build)
+# MrBrianHinton project
+aka I ripped [another developer's personal]( page and lived to tell the tale.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+I stumbled upon Brian's page after we exchanged a few words on Astro discord. I quickly noticed he was using pixi to render his cool animated background. Despite just being a small landing page with some text, it wasn't getting the best performance results from lighthouse due to heavy dependencies etc. I proceeded to do what any other sane person would, I ripped his page 😆 and added a pure webgl shader as a background (no library dependencies). Granted, it's different than what's on the actual site but I believe it fits the general style and works well as a proof of concept.
 
-## 🚀 Project Structure
+#100DaysOfCode 3/100
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 Built with Astro. It's pretty cool 🧞
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+**👀 Want to learn more about Astro?**
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Check out the [documentation](https://github.com/snowpackjs/astro) or jump into the [Discord server](https://astro.build/chat).
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Any static assets, like images, can be placed in the `public/` directory.
+
 
 ## 🧞 Commands
 
@@ -35,6 +24,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run start` | Starts local dev server at `localhost:3000` |
 | `npm run build` | Build your production site to `./dist/`     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).
